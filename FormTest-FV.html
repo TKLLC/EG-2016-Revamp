@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content=" Test form FormValidator not working"/>
+<meta name="author" content="">
+
+<title>2016-2017 Elite Gymnastics Registration Form</title>
+
+<!-- Styles -->
+<link rel="stylesheet" href="_css/normalize.css">
+
+<!-- Font awesome CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<!-- Bootstrap CSSv3 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Include Bootstrap Multiselect CSS, JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+
+<!-- Favicon -->
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+<!-- Custom -->
+<link href="_css/accessibility.css" rel="stylesheet" type="text/css">
+<link href="_css/sticky-footer-navbar.css" rel="stylesheet" type="text/css">
+<link href="_css/nav-social.css" rel="stylesheet" type="text/css">
+
+<!-- Main CSS -->
+<link href="_css/typography2.css" rel="stylesheet" type="text/css">
+<link href="_css/style-home.css" rel="stylesheet" type="text/css">
+
+<!-- FormValidation CSS file -->
+<link href="vendor/formvalidation/dist/css/formValidation.min.css" rel="stylesheet" type="text/css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="#">Brand</a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a> </li>
+        <li><a href="#">Link</a> </li>
+      </ul>
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a> </li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a> </li>
+            <li><a href="#">Another action</a> </li>
+            <li><a href="#">Something else here</a> </li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a> </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+<!-- HEADER -->
+<header>
+  <div class="jumbotron">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Lorem ipsum dolor sit amet</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dicta, cupiditate consequatur necessitatibus quos libero eius ipsum qui sit molestiae.</p>
+          <p>&nbsp;</p>
+          <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- / HEADER --> 
+
+<!--  SECTION-1 -->
+<section>
+  <div class="row">
+    <div class="col-lg-12 page-header text-center">
+      <h2>Form Test</h2>
+    </div>
+  </div>
+  <div class="container ">
+    <div class="row">
+		<form id="profileForm" method="post" class="form-horizontal">
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Full name</label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="fullName" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Email address</label>
+        <div class="col-xs-6">
+            <input type="text" class="form-control" name="email" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="col-xs-3 control-label">Children</label>
+        <div class="col-xs-9">
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <input type="text" class="form-control childFullName" name="child[0].fullName" placeholder="Full name" />
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control childDob" name="child[0].dob" placeholder="Date of birth" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <input type="text" class="form-control childFullName" name="child[1].fullName" placeholder="Full name" />
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control childDob" name="child[1].dob" placeholder="Date of birth" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <input type="text" class="form-control childFullName" name="child[2].fullName" placeholder="Full name" />
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control childDob" name="child[2].dob" placeholder="Date of birth" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <input type="text" class="form-control childFullName" name="child[3].fullName" placeholder="Full name" />
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control childDob" name="child[3].dob" placeholder="Date of birth" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-xs-6">
+                    <input type="text" class="form-control childFullName" name="child[4].fullName" placeholder="Full name" />
+                </div>
+                <div class="col-xs-4">
+                    <input type="text" class="form-control childDob" name="child[4].dob" placeholder="Date of birth" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-9 col-xs-offset-3">
+            <button type="submit" class="btn btn-default">Validate</button>
+        </div>
+    </div>
+	</form>
+  </div>
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+    $('#profileForm').formValidation({
+        framework: 'bootstrap',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            fullName: {
+                validators: {
+                    notEmpty: {
+                        message: 'The full name is required'
+                    },
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The full name must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z\s]+$/,
+                        message: 'The full name can only consist of alphabetical and spaces'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'The email address is required'
+                    },
+                    emailAddress: {
+                        message: 'The input is not a valid email address'
+                    }
+                }
+            },
+            childFullName: {
+                // The children's full name are inputs with class .childFullName
+                selector: '.childFullName',
+                // The field is placed inside .col-xs-6 div instead of .form-group
+                row: '.col-xs-6',
+                validators: {
+                    stringLength: {
+                        min: 6,
+                        max: 30,
+                        message: 'The full name must be more than 6 and less than 30 characters long'
+                    },
+                    regexp: {
+                        regexp: /^[a-zA-Z\s]+$/,
+                        message: 'The full name can only consist of alphabetical and spaces'
+                    }
+                }
+            },
+            childDob: {
+                // The children's date of birth are inputs with class .childDob
+                selector: '.childDob',
+                // The field is placed inside .col-xs-4 div instead of .form-group
+                row: '.col-xs-4',
+                validators: {
+                    date: {
+                        format: 'YYYY-MM-DD',
+                        message: 'The date of birth is not valid'
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
+
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- / FOOTER --> 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<!--<script src="../../js/jquery-1.11.3.min.js"></script> 
+--><!-- Include all compiled plugins (below), or include individual files as needed --> 
+<!--<script src="../../js/bootstrap.js"></script>
+-->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/tablesaw.stackonly.js"></script>
+
+-->    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/_js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Include Bootstrap Multiselect CSS, JS -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.min.js"></script>
+
+    <!-- Include Bootstrap Validator JS -->
+	<script type="text/javascript" src="/vendor/formvalidation/dist/js/formValidation.min.js"></script>
+	<script type="text/javascript" src="/vendor/formvalidation/dist/js/framework/bootstrap.min.js"></script>
+</body>
+</html>
