@@ -1,0 +1,30 @@
+/* Styles for tablesaw menu */
+
+h2 {
+  text-align: center;
+  padding-top: 20px 0;
+}
+
+.table-bordered {
+  border: 2px solid #fff !important;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table tfoot tr td {
+  text-align: left !important;
+}
+
+@media (max-width: 39.9375em) {
+  .tablesaw-stack tbody tr:not(:last-child) {
+    border-bottom: 2px solid #CCC;
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}

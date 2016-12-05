@@ -1,0 +1,389 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Oxygen:400,300,700);
+
+
+body {
+	background: hsla(52, 8%, 50%, 0.3);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #6E6B5D;
+    font-family: 'Oxygen', sans-serif;
+/*    font-size: 100%;
+*/}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {    
+	font-family: 'Oxygen', sans-serif;
+	color:#232c68;
+	clear: both;
+}
+
+#footer {
+	margin: 0 auto;
+	width: 100%;
+	padding: 15px 25px 0;
+}
+
+#landing-page h1 {
+	color: #232c68;
+	font-weight: bold;
+	font-size: 3.8em;
+	line-height: 0.9;
+	letter-spacing: -2px;
+	margin-bottom: 5px;
+}
+
+#landing-page h2 {
+	margin-top: 2%;
+	color: #5a622a;	
+	font-size: 2.8em;
+	font-weight: 700;
+	line-height: 1;
+}
+
+#landing-page h3 {
+	margin-top: 2%;
+ 	color:#EB7823;
+	font-size: 2em;
+	line-height: 1.1;
+
+}
+
+#landing-page h4 {
+	color: #0082CA;
+	font-size: 1.5em;
+	line-height: 1.2;
+	letter-spacing: -.02em;
+	margin-bottom: -.02em;
+}
+
+#landing-page h5 {
+	color: #232c68;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+.classHeader {
+	padding-top: 16px;
+}
+
+.groups {
+	font-size: 0.8em;
+}
+	
+.classD {
+	font-size: 1.1em;
+}
+
+.noShow {
+	color: hsla(52, 8%, 50%, .03);
+}
+
+.noUnderline a {
+	text-decoration: none;	
+}
+
+#days {
+	font-size: medium;
+	background-color: #fff;
+	color: #232c68;	
+}
+
+ #days2{
+	font-size: medium;
+	background-color: #fff;
+	color: #232c68;	
+}
+
+ #week-schedule tr td, 
+ #week-schedule2 tr td {
+    border: 1.75pt solid #fff;
+}
+
+.table-bordered main,
+.table-bordered mini {
+
+}
+.dates {
+	diplay: inline-block;
+	text-align: left;
+	padding-left: 18px;
+	padding-top: 9px;
+
+	font-size: 0.8em;
+	line-height: 1;
+}
+
+.help-block
+.with-errors {
+	font-size: 0.8em;	
+}
+/*--------------------------------------------------------------
+ Custom Button CSS
+--------------------------------------------------------------*/
+/* Custom overrides--Not in Use*/
+ .btn-custom {
+	background: #009DDB;
+	border-color: #BEBCAD;
+	color: #FFF; 
+	font-size: 14px; 
+	border-radius: 4px; 
+	border-width: 1px;
+	text-decoration: none;
+}
+
+ .btn-custom:hover {
+	background: #33C3F0;
+	border-color: #BEBCAD;
+	color: #333;
+	text-decoration: none;
+}
+
+.btn .btn-custom:active, .btn .btn-custom:focus {
+	background: #232c68;
+	border-color: #BEBCAD;
+	color: #FFF;
+}
+
+/*--------------------------------------------------------------
+ Schedule Table CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+.className {
+	font-weight: 700;	
+}
+
+.classAge {
+	font-weight: 300;	
+}
+
+.table-vcenter td {
+	vertical-align: middle !important;
+}
+
+.mission {
+	font-size: 1em;
+	line-height: 1;
+	font-weight:400;	
+	padding-top: 10px;
+	border-top: 2px solid #FF9900;
+	text-align: center;
+
+}
+.copyright {
+	font-size: .8em;
+	line-height: 1;	
+	padding-top: 20px;
+}
+
+#notifyMobile {
+ 	display: none
+}
+
+th {
+    border-bottom: 1pt solid #fff;
+}
+
+.verticalLine {
+	border-left: thin solid #5a622a;		
+}
+ ul {
+	font-size: 1.25em;
+	color: #232c68;
+	margin-top: 2%;
+	margin-left: 33%;
+}
+
+p {
+	font-size: 1.25em;
+    color: #232c68;
+	margin-bottom: .75em;
+	vertical-align: top;
+	text-align: left;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+sub {
+	top: .5ex;
+}
+
+small {
+	font-size: 85%;
+	letter-spacing: -.02em;
+	word-spacing: -.05em
+}
+
+big {
+	font-size: 125%;
+}
+
+/*--------------------------------------------------------------
+ Legal & Schedule Table CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+@media only screen and (min-width: 20em) and (max-width: 24.6375em) {
+#notifyMobile {
+	display: block;
+	font-size: 65%;
+	line-height: 1.6;
+	letter-spacing: -0.5px;
+	text-align: left;
+	padding-left: 10px;
+
+}
+.dates {
+	margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 24.7em) and (max-width: 39.9375em) {
+#notifyMobile {
+ 	display: block;
+	font-size: 80%;
+	line-height: 1.4;
+	letter-spacing: -0.5px;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.dates {
+	margin-bottom: 20px;
+}
+}
+
+/*@media only screen and (min-width: 989px) and (max-width: 1199px) {
+#landing-page h4 {
+	color: #0082CA;
+	font-size: 1.4em;
+	line-height: 1.2;
+	letter-spacing: -.02em;
+	margin-bottom: -.02em;
+}
+}*/
+
+/*--------------------------------------------------------------
+ Registration Form CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+.must {
+	color: FireBrick;
+}
+#registrationForm .form-control-feedback {
+    pointer-events: auto;
+}
+#registrationForm .form-control-feedback:hover {
+    cursor: pointer;
+}
+@media only screen and (min-width: 20em) and (max-width: 24.6375em) {
+#holidaysMobile {
+	display: block;
+	font-size: 65%;
+	line-height: 1.8;
+	letter-spacing: -0.5px;
+	text-align: left;
+/*	padding-left: 10px;
+*/
+}
+.dates {
+	margin-bottom: 15px;
+}
+}
+
+@media only screen and (min-width: 24.7em) and (max-width: 39.9375em) {
+#holidaysMobile {
+ 	display: block;
+	font-size: 75%;
+	line-height: 2;
+	letter-spacing: -0.5px;
+	text-align: left;
+/*	padding-left: 10px;
+*/}
+
+.dates {
+	margin-bottom: 20px;
+}
+}
+@media only screen and (min-width: 20em) and (max-width: 49.9375em) {
+
+button.btn.btn-primary.btn-lg{
+	margin-top: 15px;
+}
+}

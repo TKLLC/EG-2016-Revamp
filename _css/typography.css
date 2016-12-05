@@ -1,0 +1,174 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body {
+	background: hsla(52, 8%, 50%, 0.3);
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #6E6B5D;
+	font-family: 'BerninoSans', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'BerninoSans', Arial, sans-serif;
+	color:#232c68;
+	clear: both;
+}
+
+#landing-page h1 {
+	color: #232c68;
+	font-weight: bold;
+	font-size: 2.9em;
+	line-height: 0.9;
+	letter-spacing: -2px;
+	margin-bottom: 5px;
+}
+
+#landing-page h2 {
+	margin-top: 2%;
+	color: #5a622a;	
+	font-size: 2.3em;
+	line-height: 1;
+}
+
+#landing-page h3 {
+	margin-top: 2%;
+ 	color:#a07f55;
+	font-size: 1.7em;
+	line-height: 1.1;
+
+}
+
+#landing-page h4 {
+	color: #232c68;
+	font-size: 1.25em;
+	line-height: 1.2;
+	margin-bottom: 2%;
+
+}
+
+#landing-page h5 {
+	color: #232c68;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.3;
+}
+
+.verticalLine {
+	border-left: thin solid #5a622a;		
+}
+
+/*.coupon h3 {
+	line-height: 1.0;
+}
+*/
+ ul {
+	font-size: 1.25em;
+	color: #232c68;
+	margin-top: 2%;
+	margin-left: 33%;
+}
+
+p {
+	color: #232c68;
+	margin-bottom: .8em;
+	vertical-align: top;
+	text-align: center;
+}
+
+hr {
+	border: none;	
+}
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	font-size: 2.7em;
+	line-height: 1.3;
+	border-left: none;	
+	color: #5a622a;	
+	margin: 0 1.5em;
+}
+
+.copyright {
+	text-align: center;
+	color: #6E6B5D;
+}
+
+.savings-pdf {
+margin-top: 5%;
+}
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+sup,
+sub {
+	font-size: 75%;
+	height: 0;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	bottom: 1ex;
+}
+
+small {
+	font-size: 85%;
+}
+
+big {
+	font-size: 125%;
+}

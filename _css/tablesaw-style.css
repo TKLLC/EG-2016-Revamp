@@ -1,0 +1,35 @@
+.table h2 {
+  text-align: center;
+  padding-top: 20px 0;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table tfoot tr td {
+  text-align: left !important;
+}
+
+.noTime {
+	background-color: #BEBCAD;
+	border-left-color: hsla(52, 8%, 50%, .03);
+}
+
+/*table thead {
+    border-right: 1.75pt solid #fff;
+	border-left: 1.75pt solid #ddd;
+	border-bottom: 2pt solid #000;
+}
+*/
+@media (max-width: 39.9375em) {
+  .tablesaw-stack tbody tr:not(:last-child) {
+    border-bottom: 3px solid #232c68;	
+  }
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}

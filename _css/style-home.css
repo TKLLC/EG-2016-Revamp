@@ -1,0 +1,417 @@
+/*--------------------------------------------------------------
+Home Page Layouts (needs organization)
+--------------------------------------------------------------*/
+
+.jumbotron {
+	margin-top: 25px;
+}
+
+.text-center {
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	padding-right: auto;
+	padding-left: auto;
+	padding-bottom: 0px;
+}
+
+.tocenter {
+	margin: 0 auto;
+	display: inline;	
+}
+
+.clearfix {  
+	
+}
+
+/*--------------------------------------------------------------
+For Registration Form 
+--------------------------------------------------------------*/
+
+#success_message { 
+	display: none;
+}
+/*--------------------------------------------------------------
+Program links for Home Page (needs organization)
+--------------------------------------------------------------*/
+
+.program {
+  margin-top: 15px;
+}
+.program:first-child {
+  margin-top: 0;
+}
+.program,
+.program-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.program-body {
+  width: 10000px;
+}
+.program-object {
+  display: block;
+  margin-top: 12px;
+
+}
+.program-object.img-thumbnail {
+  max-width: none;
+}
+.program-right,
+.program > .pull-right {
+  padding-left: 10px;
+}
+.program-left,
+.program > .pull-left {
+  padding-right: 10px;
+}
+.program-left,
+.program-right,
+.program-body {
+  display: table-cell;
+  vertical-align: top;
+}
+.program-middle {
+  vertical-align: middle;
+}
+.program-bottom {
+  vertical-align: bottom;
+}
+h3.program-heading {
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+h2.program-heading {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.program-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+/*--------------------------------------------------------------
+Gymnastics page CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+#top,
+#schedule {
+	text-decoration: none;
+	color:#232c68;	
+}
+
+/*--------------------------------------------------------------
+Ninja Zone page CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+.responsive-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.responsive-container iframe {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#ninjaVideo {
+	margin-bottom: 10px;
+}
+.yellow {
+	text-decoration: none;
+	color: #CCC31C;
+}
+.green {
+	text-decoration: none;
+	color: #42CC1C;
+}
+
+/*--------------------------------------------------------------
+Figures, artwork, logos CSS
+--------------------------------------------------------------*/
+/* Custom overrides*/
+
+@media only screen and (min-width: 20em) {
+	
+#gymnasticsLogo,
+#ninjaLogo,
+#swimLogo,
+#mommyMeLogo,
+#climbingLogo,
+#birthdayPartiesLogo,
+#springSwimLogo,
+#summerLogo,
+#promoLogo,
+#registrationLogo {
+/*	width: inherit;
+	height: auto;
+*/}
+
+#balance-girl {
+	width: 40vw;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+}
+
+#climb-boy {
+	width: 36vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#ninja  {
+	width: 38vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#swim-boy-girl {
+	width: 70vw;
+	height: auto;
+}
+
+#swim-float-boy {
+	width: 30vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#ring-boy {
+	width: 40vw;
+	height: auto;
+}
+
+#maze-kids {
+	width: 60vw;
+	height: auto;
+}
+
+#party-cake {
+	width: 40vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#boy-nose {
+	width: 22vw;
+	height: auto;
+}
+#boy-spike {
+	display: none;
+	}
+#girl-legs {
+	width: 21vw;
+	height: auto;
+}
+
+#girl-up-down {
+	width: 24vw;
+	height: auto;
+}
+
+#boy-side {
+	display: none;
+}
+}
+@media only screen and (min-width: 30em) {
+
+#gymnasticsLogo,
+#ninjaLogo,
+#swimLogo,
+#mommyMeLogo,
+#climbingLogo,
+#birthdayPartiesLogo,
+#springSwimLogo,
+#summerLogo,
+#promoLogo,
+#registrationLogo {
+/*	width: inherit;
+	height: auto;
+*/}
+
+#balance-girl {
+	width: 24vw;
+	height: auto;
+	float: left;
+	margin-right: 10px;
+}
+
+#climb-boy {
+	width: 32vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#ninja  {
+	width: 28vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#swim-boy-girl {
+	width: 65vw;
+	height: auto;
+}
+
+#swim-float-boy {
+	width: 26vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#ring-boy {
+	width: 26vw;
+	height: auto;
+}
+
+#maze-kids {
+	width: 60vw;
+	height: auto;
+}
+
+#boy-nose {
+	width: 22vw;
+	height: auto;
+}
+#boy-spike {
+	display: inline;
+	width: 15vw;
+	height: auto;
+	}
+#girl-legs {
+	width: 20vw;
+	height: auto;
+}
+
+#girl-up-down {
+	width: 16vw;
+	height: auto;
+}
+
+#boy-side {
+	display: none;
+}
+}
+@media only screen and (min-width: 42em) {
+
+#boy-nose {
+	width: 17vw;
+	height: auto;
+}
+#boy-spike {
+	width: 11vw;
+	height: auto;
+	}
+#girl-legs {
+	width: 15vw;
+	height: auto;
+}
+
+#girl-up-down {
+	width: 12vw;
+	height: auto;
+}
+
+#swim-boy-girl {
+	width: 60vw;
+	height: auto;
+}
+
+#swim-float-boy {
+	width: 20vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#boy-side {
+	display: inline;
+	width: 12vw;
+	height: auto;
+}
+
+#climb-boy {
+	width: 26vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#ninja  {
+	width: 33vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+
+#maze-kids {
+	width: 40vw;
+	height: auto;
+}
+
+#party-cake {
+	width: 20vw;
+	height: auto;
+	float: right;
+	margin-right: 10px;
+}
+}
+
+@media only screen and (min-width: 52em) {
+
+#gymnasticsLogo,
+#ninjaLogo,
+#swimLogo,
+#mommyMeLogo,
+#climbingLogo,
+#birthdayPartiesLogo,
+#springSwimLogo,
+#summerLogo,
+#promoLogo,
+#registrationLogo {
+/*	width: inherit;
+	height: auto;
+*/	
+	
+}
+
+#boy-nose {
+	width: 16vw;
+	height: auto;
+}
+#boy-spike {
+	width: 11vw;
+	height: auto;
+	}
+#girl-legs {
+	width: 16vw;
+	height: auto;
+}
+
+#girl-up-down {
+	width: 13vw;
+	height: auto;
+}
+
+#boy-side {
+	width: 10vw;
+	height: auto;
+}
+}

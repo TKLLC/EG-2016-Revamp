@@ -1,0 +1,98 @@
+/*--------------------------------------------------------------
+ Sticky footer styles
+--------------------------------------------------------------*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  	overflow-x: hidden;
+/*	overflow-y: hidden;
+*/	margin-bottom: 60px;
+	
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	/* Set the fixed height of the footer here */
+	height: 30px;
+	background-color: hsla(52,8%,50%,0.3);
+}
+
+/*--------------------------------------------------------------
+ Custom page CSS
+--------------------------------------------------------------*/
+/* Not required for template or sticky footer method. */
+
+/*.container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
+}
+*/.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/*--------------------------------------------------------------
+Header styles minus menu
+--------------------------------------------------------------*/
+
+.masthead-centered{
+	background-color: #BEBCAD;
+}
+
+/*--------------------------------------------------------------
+Navbar toggle and brand — some modified from Bootstrap.css
+--------------------------------------------------------------*/
+
+#EG-logo {
+	width: 3.65em;
+	height: 3.65em;
+	margin-left: 10px;
+	margin-right: 5px;	
+}
+
+#EG-brand {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+}
+
+#link-to-nav {
+	font-weight: 700;
+	font-size: .75em;
+}
+
+@media (max-width: 30em) {
+#EG-logo {
+	width: 3.25em;
+	height: 3.25em;
+	margin-left: 10px;
+	margin-right: 5px;	
+}
+
+#EG-brand {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 700;
+	font-size: 1.9em;
+}
+}
+
+/*.navbar-fixed-top .navbar-collapse {
+	max-height: 75vh
+}
+*//*.social-menu {
+	visibility: collasped; 
+}
+*/
